@@ -60,21 +60,15 @@ def main():
         else:
             day=[day]  
             
-        print ("Loading data.....") 
-        
-        start = time.time()
-
-            
+        print ("Loading data.....")         
+        start = time.time()            
         filename=city+".csv"
         df = pd.read_csv(filename)    
         df['Start Time']=pd.to_datetime(df['Start Time'])    
         df['End Time']=pd.to_datetime(df['End Time'])
         df['Month-str'] = df['Start Time'].dt.strftime('%b').str.lower()    
         df['day']=df['Start Time'].dt.strftime('%a').str.lower()
-        df['hour']=df['Start Time'].dt.strftime('%H')
-        
-        
-         
+        df['hour']=df['Start Time'].dt.strftime('%H')         
         df1=df[df['Month-str'].isin(month)] 
         df2=df1[df1['day'].isin(day)] 
         
