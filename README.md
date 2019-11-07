@@ -13,3 +13,6 @@ bikeshare.py
 ### Credits
 Udacity
 
+### End note
+Git is really cool
+
