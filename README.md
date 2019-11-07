@@ -1,8 +1,8 @@
 ### Date created
-7th Nov 2019
+7th Nov 2019 -
 
 ### Project Title
-GIT assignment
+GIT assignment for 
 
 ### Description
 Learning what git does
