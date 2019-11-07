@@ -13,13 +13,10 @@ def main():
         import time
         import pandas as pd
         import numpy as np
-        import statistics as stat
-        
-        pd.set_option('display.max_rows', None)
-        
+        import statistics as stat        
+        pd.set_option('display.max_rows', None)        
         print('Hello! Let\'s explore some US bikeshare data!')
-        print('-'*40)
-        
+        print('-'*40)        
         city = input ("Enter the city you like to explore: ")
         city=city.lower()
         while city not in ['chicago','new_york_city','washington']:
@@ -35,15 +32,12 @@ def main():
             print('Data for {} is not available. Please type month name or all'.format(month))
             month = input ("Enter the month you like to explore (try again eg: all,jan,feb,.....,jun): ")
             month=month.lower()
-        print ("You selected the month: {}".format(month))
-        
-        print('-'*40)
-        
+        print ("You selected the month: {}".format(month))        
+        print('-'*40)        
         if month=='all' :
             month=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
         else:
-            month=[month]
-        
+            month=[month]        
         day = input ("Enter the day you like to explore or all if you want to display all the days: ")
         day=day.lower()
         day=day[0:3]
